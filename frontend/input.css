@@ -1,0 +1,35 @@
+@import "tailwindcss/preflight";
+@import "tailwindcss/theme";
+@import "tailwindcss/utilities";
+
+/* Add this after your @import "tailwindcss" lines in input.css */
+textarea {
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+    background: inherit;
+    resize: none;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    /* or your custom font */
+}
+
+/* Your custom styles */
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+}
+
+
+
+.scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+    display: none;
+}
