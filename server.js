@@ -26,7 +26,7 @@ app.post("/chat", async(req, res) => {
     return
   }
     
-    console.log('messgae', message)
+    
 
     const result = await generate(message, threadId)
 
