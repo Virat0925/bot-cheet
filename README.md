@@ -32,10 +32,10 @@
 ## Screenshots
 
 ### Chat Interface
-![Chat Interface](assets/screenshot1.png)
+![Chat Interface](https://github.com/Virat0925/bot-cheet/blob/main/assets/Screenshot%201.png?raw=true)
 
 ### Bot Reply Example
-![Bot Reply](assets/screenshot2.png)
+![Bot Reply](https://github.com/Virat0925/bot-cheet/blob/main/assets/Screenshot%202.png?raw=true)
 
 
 ## Getting Started
