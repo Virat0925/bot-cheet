@@ -68,13 +68,12 @@ async function generate(text) {
 }
 
 async function callServer(inputText) {
-  const response = await fetch("http://localhost:3005/chat", {
+  const response = await fetch("/chat", {
     method: "POST",
-    headers: {
-      "content-type": "application/json",
-    },
+    headers: { "content-type": "application/json" },
     body: JSON.stringify({ threadId: threadId, message: inputText }),
   });
+
 
   if (!response.ok) {
     throw new Error("Error generating the response, Please try again!");
