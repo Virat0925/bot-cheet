@@ -1,14 +1,21 @@
 import express from "express";
 import { generate } from "./chatbot.js";
 import cors from 'cors'
+import path from 'path'
+import { fileURLToPath } from "url";
 
 const app = express();
 const port = 3005;
 app.use(cors())
 app.use(express.json())
 
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+app.use(express.static(path.join(__dirname, "frontend")));
+
 app.get("/", (req, res) => {
-  res.send("Welcome to Bot-Cheet");
+  res.sendFile(path.join(__dirname, "frontend", "index.html"));
 });
 
 app.post("/chat", async(req, res) => {
